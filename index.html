@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus Ticket App</title>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="/resources/images/stoppage.png"
+      type="image/x-icon"
+    />
+
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <div class="navbar bg-base-100 container-center">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a href="/">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl font-bold" href="/">Bus Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="/">Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a
+          class="bg-primary-light px-4 py-2 border-primary rounded-lg flex items-center gap-2"
+          >Bus <img src="./resources/images/bus-icon.png" alt=""
+        /></a>
+      </div>
+    </div>
+    <!-- navbar ends -->
+
+    <!-- hero section starts -->
+    <div
+      class="hero min-h-[calc(100vh-65px)] bg-center bg-no-repeat bg-cover rounded-3xl overflow-hidden container-center"
+      style="background-image: url(./resources/images/banner.png)"
+    >
+      <div class="hero-overlay bg-opacity-50"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-2xl md:text-3xl lg:text-5xl font-bold">
+            End-to-End trave with
+            <span class="text-primary">CPP paribahan</span>
+          </h1>
+          <p class="mb-5">
+            You can travel by our bus in any place to the country very
+            comfortly. Our buses are in very good condition. We always try to
+            give best services.
+          </p>
+          <a class="btn btn-primary" href="#ticket-section">Get Started</a>
+        </div>
+      </div>
+    </div>
+    <!-- hero section ends -->
+
+    <!-- hero section bottom content starts -->
+    <section
+      class="bottom-content w-11/12 max-w-[800px] mx-auto py-6 grid gap-5 md:-mt-14 md:grid-cols-3 relative z-50"
+    >
+      <div
+        class="bg-white rounded-2xl max-w-[250px] px-4 py-2 mx-auto border-b-primary box-one flex justify-center items-center gap-3"
+      >
+        <div class="left-content">
+          <img src="./resources/images/people.png" alt="" />
+        </div>
+        <div class="right-content">
+          <h3 class="text-2xl font-bold">500k+</h3>
+          <p>Registered users</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-white rounded-2xl max-w-[250px] px-4 py-2 mx-auto border-b-primary box-one flex justify-center items-center gap-3"
+      >
+        <div class="left-content">
+          <img src="./resources/images/ticket-cupon.png" alt="" />
+        </div>
+        <div class="right-content">
+          <h3 class="text-2xl font-bold">1.7 lakhs</h3>
+          <p>Tickets sold</p>
+        </div>
+      </div>
+
+      <div
+        class="bg-white rounded-2xl max-w-[250px] px-4 py-2 mx-auto border-b-primary box-one flex justify-center items-center gap-3"
+      >
+        <div class="left-content">
+          <img src="./resources/images/stoppage.png" alt="" />
+        </div>
+        <div class="right-content">
+          <h3 class="text-2xl font-bold">80k+</h3>
+          <p>Rental partners</p>
+        </div>
+      </div>
+    </section>
+    <!-- hero section bottom content ends -->
+
+    <!-- offers-section starts -->
+    <section class="offers-section py-10">
+      <div class="container-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
+          Best offers for you
+        </h2>
+        <div
+          class="coupon-cards-wrapper flex flex-col md:flex-row gap-5 md:justify-center"
+        >
+          <div
+            class="left-coupon bg-[#FFBF0F] px-5 rounded-2xl flex justify-between"
+          >
+            <div class="justify-self-center self-center">
+              <h3 class="text-2xl font-medium">15% off</h3>
+              <p>on your next purchase</p>
+              <p class="text-gray-600">use by February 2024</p>
+            </div>
+            <img src="./resources/images/cupon-devider.png" alt="" />
+            <div class="self-center">
+              <h3 class="text-2xl font-medium">NEW15</h3>
+              <p class="text-gray-600">Coupon code</p>
+            </div>
+          </div>
+
+          <div
+            class="right-coupon bg-[#F78C9C] px-5 rounded-2xl flex justify-between"
+          >
+            <div class="justify-self-center self-center">
+              <h3 class="text-2xl font-medium">20% off</h3>
+              <p>on your next purchase</p>
+              <p class="text-gray-600">use by February 2024</p>
+            </div>
+            <img src="./resources/images/cupon-devider.png" alt="" />
+            <div class="self-center">
+              <h3 class="text-2xl font-medium">Couple 20</h3>
+              <p class="text-gray-600">Coupon code</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="border-primary text-primary text-base mx-auto block mt-5 px-3 py-2 rounded-lg"
+        >
+          See all offers
+        </button>
+      </div>
+    </section>
+    <!-- offers-section ends -->
+
+    <!-- ticket section starts -->
+    <section
+      id="ticket-section"
+      class="ticket-section py-10 border-2 border-primary rounded-xl bg-[#F7F8F8]"
+    >
+      <div class="container-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-5">
+          CPP paribahan
+        </h2>
+        <p class="text-center mb-5">
+          You can travel by our bus in any place to the country very comfortly.
+          Our buses are in very good condition. We always try to give best
+          services.
+        </p>
+
+        <div
+          class="route bg-white px-5 rounded-xl grid gap-5 justify-between lg:grid-cols-12"
+        >
+          <div class="left-content lg:col-span-8 py-5 self-center space-y-4">
+            <div class="top-content flex justify-between flex-col md:flex-row">
+              <div class="heading flex items-center gap-2">
+                <img src="./resources/images/bus-logo.png" alt="" />
+                <div class="text">
+                  <h3 class="text-xl md:text-2xl font-bold">
+                    Greenline Paribahan
+                  </h3>
+                  <span class="text-gray-500">Coach-009-WEB ! AC_Business</span>
+                </div>
+              </div>
+
+              <p
+                class="seats bg-primary-light flex items-center px-3 py-2 rounded-lg"
+              >
+                <img src="./resources/images/seat-green-filled.png" alt="" />
+                <span id="seats-left" class="pl-4">40</span>
+                &nbsp; seats left
+              </p>
+            </div>
+
+            <div class="bottom-content bg-[#F7F8F8] p-5 rounded-xl">
+              <div
+                class="route flex justify-between items-center border-b border-dashed pb-4 border-gray-500"
+              >
+                <h3 class="">Route</h3>
+                <p class="font-bold">Dhaka - Sylhet</p>
+              </div>
+
+              <div
+                class="departure py-4 flex justify-between items-center border-b border-dashed border-gray-500"
+              >
+                <h3 class="">Departure time</h3>
+                <p class="font-bold">9 pm</p>
+              </div>
+
+              <div
+                class="button-groups mx-auto mt-5 flex flex-wrap justify-center gap-3 items-center"
+              >
+                <button class="btn btn-active">
+                  Boarding Point - Laxmipur
+                </button>
+                <button class="btn btn-active">Dropping Point - Bogura</button>
+                <button class="btn btn-active">Est time - 11 hour</button>
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="./resources/images/info-devider.png"
+            alt=""
+            class="hidden lg:block lg:col-span-1"
+          />
+
+          <div
+            class="right-content py-5 self-center justify-self-center text-center lg:col-span-3"
+          >
+            <img src="./resources/images/fare.png" alt="" class="mx-auto" />
+            <h3 class="text-2xl font-bold">550 Taka</h3>
+            <p>per seat</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ticket section ends -->
+  </body>
+</html>
