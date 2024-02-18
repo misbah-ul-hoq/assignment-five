@@ -3,6 +3,9 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+img {
+  user-select: none !important;
+}
 .container-center {
   width: 91%;
   max-width: 1240px;
