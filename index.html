@@ -491,13 +491,46 @@
               />
             </label>
 
+            <!-- <button class="px-4  py-2 rounded-md" disabled type="button">
+              Next
+            </button> -->
+
+            <!-- You can open the modal using ID.showModal() method -->
             <button
-              class="bg-primary confirmation-button block w-full px-4 mt-5 py-2 rounded-md"
-              disabled
+              class="btn confirmation-button block bg-primary w-full mt-5"
+              onclick="my_modal_4.showModal()"
               type="button"
+              disabled
             >
               Next
             </button>
+            <dialog id="my_modal_4" class="modal">
+              <div class="modal-box w-11/12 max-w-5xl bg-[#F7F8F8]">
+                <div class="space-y-4 mx-auto text-center">
+                  <img
+                    src="./resources/images/success.png"
+                    alt=""
+                    class="mx-auto"
+                  />
+                  <p class="success-message text-primary">Success</p>
+                  <h3 class="font-bold text-xl">
+                    Thank you for booking our bus seats. We are working hard to
+                    find the best services for you
+                  </h3>
+                  <p>Shortly you will find a confirmation in your email</p>
+                  <button class="bg-primary text-white px-4 py-1 rounded-full">
+                    Continue
+                  </button>
+                </div>
+
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button, it will close the modal -->
+                    <button class="btn close-btn" o>Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
           </form>
 
           <div class="terms-wrapper mt-5 flex justify-between items-center">

@@ -63,9 +63,13 @@ document.querySelector(".discount-btn").addEventListener("click", () => {
 });
 
 // remove default refresh when confirmation button is clicked
+function preventRefresh(e) {
+  e.preventDefault();
+}
 document
   .querySelector(".confirmation-button")
-  .addEventListener("click", (e) => {
-    e.preventDefault();
-    console.log("I have been enabled by the programmer");
-  });
+  .addEventListener("click", preventRefresh);
+
+// document.querySelector(".close-btn").addEventListener("click", (e) => {
+//   e.preventDefault();
+// });
