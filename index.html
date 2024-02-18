@@ -229,7 +229,7 @@
                 class="seats mt-4 bg-primary-light flex items-center px-3 py-2 rounded-lg md:mt-0"
               >
                 <img src="./resources/images/seat-green-filled.png" alt="" />
-                <span id="seats-left" class="pl-4">40</span>
+                <span id="" class="pl-4 seats-left">40</span>
                 &nbsp; seats left
               </p>
             </div>
@@ -413,11 +413,11 @@
             class="selected-ticket-info-wrapper p-4 bg-[#F7F8F8] mt-5 rounded-xl"
           >
             <div
-              class="top-content flex justify-between pb-3 border-b border-dashed border-gray-500"
+              class="top-content flex justify-between pb-3 mb-5 border-b border-dashed border-gray-500"
             >
               <p>
                 Seat<span
-                  class="tickets-selected bg-primary text-white px-2 ml-1 rounded"
+                  class="tickets-bought bg-primary text-white px-2 ml-1 rounded"
                   >0</span
                 >
               </p>
@@ -425,23 +425,25 @@
               <p>Price</p>
             </div>
 
-            <div
-              class="flex justify-between items-center mt-5 border-b border-solid border-gray-500 pb-5"
-            >
-              <p class="selected-seat">test</p>
-              <p class="economy">Economy</p>
-              <p class="price">550</p>
+            <div class="selected-seats-wrapper">
+              <!-- <div class="flex justify-between items-center pb-5">
+                <p class="selected-seat"></p>
+                <p class="economy"></p>
+                <p class="price"></p>
+              </div> -->
             </div>
 
-            <div class="total-price mt-5 flex justify-between items-center">
+            <div
+              class="mt-2 flex justify-between items-center border-t border-solid border-gray-500"
+            >
               <p class="font-bold text-lg">Total Price</p>
-              <p class="price font-bold text-lg"></p>
+              <p class="total-price font-bold text-lg"></p>
             </div>
 
             <input
               type="text"
               placeholder="Have any coupon?"
-              class="input input-bordered max-w-xs mt-5"
+              class="input input-bordered max-w-xs mt-5 coupon-input"
             />
             <button class="btn bg-primary text-white discount-btn">
               Apply
@@ -451,7 +453,7 @@
               class="grand-total-wrapper mt-5 flex justify-between items-center"
             >
               <p class="font-bold text-lg">Grand total</p>
-              <p class="font-bold price-after-discount text-lg"></p>
+              <p class="font-bold discounted-price text-lg"></p>
             </div>
           </div>
 
@@ -472,9 +474,9 @@
                 <span class="">Phone Number *</span>
               </div>
               <input
-                type="text"
+                type="number"
                 placeholder="Enter Your Phone"
-                class="input input-bordered max-w-full"
+                class="input phone-number-input input-bordered max-w-full"
               />
             </label>
 
@@ -483,14 +485,14 @@
                 <span class="">Email</span>
               </div>
               <input
-                type="text"
+                type="email"
                 placeholder="Enter Your Email"
                 class="input input-bordered max-w-full"
               />
             </label>
 
             <button
-              class="bg-primary block w-full px-4 mt-5 text-white py-2 rounded-md"
+              class="bg-primary confirmation-button block w-full px-4 mt-5 py-2 rounded-md"
               disabled
               type="button"
             >
@@ -507,5 +509,7 @@
       <!-- ticket section bottom content ends -->
     </section>
     <!-- ticket section ends -->
+
+    <script src="script.js"></script>
   </body>
 </html>
